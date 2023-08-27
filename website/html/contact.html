@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" type = "text/css" href = "../css/contact.css">
+</head>
+<body>
+<!--header-->
+<section class="header">
+    <nav>
+        <a href="../index.html"><img src="../img/HamroKitabLOGO.jpg"></a>
+            <div class = "main">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/product.html">Product</a></li>
+                    <li><a href="../html/blog.html">Blog</a></li>
+                    <li><a href="../html/research.html">Research</a></li>
+                    <li><a href="../html/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    </nav>
+<!--end header-->
+<div id="overlay">
+    <form onsubmit="event.preventDefault();validateform()">
+        <h1>Contact Us</h1>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Full Name">
+        <small class="error"></small>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Your Email">
+        <small class="error"></small>
+
+        <label for="message">Message:</label>
+        <textarea type="message" id="message" placeholder="Your Message" rows="6"></textarea>
+        <small class="error"></small>
+
+        <div class="center">
+            <input type="submit" value="Send Message">
+            <p id="success"></p>
+        </div>
+
+    </form>
+</div>
+<script src="../js/validate.js"></script>
+</section>
+
+    
+       <!--footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Online Shop</h4>
+                        <ul>
+                            <li><a href="#">Top Selling English Books</a></li>
+                            <li><a href="#">Top Selling Nepali Books</a></li>
+                            <li><a href="#">Fiction & Literature</a></li>
+                            <li><a href="#">Self Development and Motivation</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </footer>
+        <!--end footer-->
+</body>
+</html>
